@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: scm-service
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${random.value}
+    lease-renewal-interval-in-seconds: 10 #discovery한테 (default:30) 10초마다 하트비트 전송
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
