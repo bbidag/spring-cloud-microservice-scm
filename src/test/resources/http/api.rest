@@ -1,0 +1,17 @@
+POST
+
+http://localhost:8082/bbidag/cart/buy/all
+%%%
+
+# Duration: 229 ms
+# URL: http://localhost:8082/bbidag/cart/buy/all
+
+# HTTP/1.1 200
+
+@Content-Type: text/plain;charset=UTF-8
+@Content-Length: 50
+@Date: Sun, 06 Jun 2021 14:55:06 GMT
+@Keep-Alive: timeout=60
+@Connection: keep-alive
+
+bbidag가 사과,배,포도를 구매했습니다.
