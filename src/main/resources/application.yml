@@ -2,8 +2,15 @@ server:
   port: 8081
 
 spring:
+  profiles:
+    active: dev
   application:
     name: scm-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
 
 eureka:
   instance:
